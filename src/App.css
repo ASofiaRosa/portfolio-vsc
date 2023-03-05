@@ -4,54 +4,73 @@
   --white: #a9dee9;
 }
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
 .App {
-  text-align: center;
   font-family: "Playfair Display", serif;
 }
 
-.HeaderDiv {
+/* Header Section */
+.HeaderContainer {
   background-color: var(--heroBackground);
-  padding: 1rem;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+
+.HeaderLeft {
+  color: var(--white);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.HeaderLeft p {
+  font-size: 0.9rem;
+  margin: 0px;
+  padding-left: 1rem;
+}
+
+.HeaderLeft img {
+  height: 50px;
+  border-radius: 50%;
 }
 
 .HeaderRight ul {
   list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  float: right;
 }
+
 .HeaderRight li {
   display: inline;
   color: var(--white);
   text-align: center;
-  padding: 14px 16px;
+  padding-left: 40px;
   text-decoration: none;
 }
-.HeaderLeft {
-  float: left;
-  color: var(--white);
-  font-size: 1.2rem;
-}
+
+/* Hero Section */
 
 .HeroSection {
   background-color: var(--heroBackground);
-  height: 87vh;
+  height: 90vh;
 }
 
 .HeroText {
-  width: 100%;
-  height: 87vh;
+  height: 90vh;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
 }
 
 .Spline {
-  position: absolute;
-  top: -4rem;
-  z-index: 2;
+  margin: -31rem 0;
   transform: scale(0.7);
+}
+.containerSpline {
+  display: flex;
+  justify-content: center;
 }
 
 .HeroText h2 {
@@ -60,9 +79,10 @@
 }
 
 .TextHeader1 {
-  padding-top: 6rem;
+  padding-top: 2rem;
   padding-right: 10rem;
 }
+
 .TextHeader2 {
   padding-left: 15rem;
 }
@@ -79,6 +99,51 @@
 }
 
 .HeroText button {
+  cursor: pointer;
   opacity: 0;
-  margin-bottom: 2rem;
+  background-color: #c99dac;
+  color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: var(--white);
+  font-family: "Playfair Display", serif;
+  padding: 8px 20px;
+}
+
+.HeroText button:hover {
+  background-color: var(--heroBackground);
+  color: #c99dac;
+  border-color: #c99dac;
+}
+
+/* Projects Section */
+
+.projectsSection {
+  padding: 15px 20px;
+}
+.projectItem {
+  width: 30%;
+}
+
+.projectImage {
+  height: 42vh;
+  width: 60vh;
+  background-image: url("./assets/chefsKiss.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-color: #a9dee9;
+  border-width: 4;
+  display: flex;
+  align-items: flex-end;
+}
+
+.projectDetails {
+  background-color: #a9dee9;
+}
+
+.projectLabel {
+  display: flex;
+  justify-content: space-between;
 }

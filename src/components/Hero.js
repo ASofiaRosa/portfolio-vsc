@@ -41,23 +41,23 @@ export default function Hero() {
           <h2 className="TextHeader1">Solving hard problems in easy ways,</h2>
           <h2 className="TextHeader2">is what makes me tick...</h2>
         </div>
+        <div className="containerSpline">
+          <Suspense fallback={<div>Loading...</div>}>
+            <Spline
+              className="Spline"
+              scene="https://prod.spline.design/an0KCanSXfUcn-qc/scene.splinecode"
+            />
+          </Suspense>
+        </div>
         <div className="TextParagraphButton">
           <p className="TextParagraph">
             After a short career as a chemical engineer,
             <s>and countless hobbies,</s> I've decided to change gears and make
             web development my new creative playground. Say hello or scroll down
             to see my portfolio and get to know me better.
-          </p>{" "}
+          </p>
           <button className="ActionButton">Say Hello</button>
         </div>
-      </div>
-      <div className="HeroSpline">
-        <Suspense fallback={<div>Loading...</div>}>
-          <Spline
-            className="Spline"
-            scene="https://prod.spline.design/an0KCanSXfUcn-qc/scene.splinecode"
-          />
-        </Suspense>
       </div>
     </div>
   );

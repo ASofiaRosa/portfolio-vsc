@@ -45,7 +45,7 @@ export default function Hero() {
           <Suspense fallback={<div>Loading...</div>}>
             <Spline
               className="Spline"
-              scene="https://prod.spline.design/an0KCanSXfUcn-qc/scene.splinecode"
+              scene="https://prod.spline.design/kWU1bI4HIauKnNVc/scene.splinecode"
             />
           </Suspense>
         </div>

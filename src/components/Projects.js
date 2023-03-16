@@ -40,7 +40,7 @@ const projects = [
     image:
       "https://res.cloudinary.com/dup0sa10r/image/upload/v1678841532/portfolio/imagemportfolio_axhkux.png",
     git: "https://github.com/ASofiaRosa/portfolio-vsc",
-    web: "https://contentfull-cookbook.netlify.app/",
+    web: "https://anasofiarosa.netlify.app/",
   },
 ];
 

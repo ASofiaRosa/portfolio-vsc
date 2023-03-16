@@ -1,4 +1,4 @@
-# Currently under construction :)
+# Deployed at https://anasofiarosa.netlify.app/
 
 
 # Getting Started with Create React App

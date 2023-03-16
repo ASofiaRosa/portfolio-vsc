@@ -78,7 +78,7 @@
 }
 
 .Spline {
-  margin: -20rem 0;
+  margin: -31rem 0;
   transform: scale(0.8);
 }
 .containerSpline {
@@ -92,23 +92,26 @@
 }
 
 .TextHeader1 {
-  padding-top: 2rem;
+  padding-top: 6rem;
   padding-right: 10rem;
+  font-family: "Playfair Display", serif;
 }
 
 .TextHeader2 {
   padding-left: 15rem;
+  font-family: "Playfair Display", serif;
 }
 
 .HeroText p {
+  font-size: 1.2rem;
   opacity: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   letter-spacing: 0.1rem;
   color: var(--white);
 }
 .TextParagraphButton {
-  width: 70%;
-  margin: 2rem auto;
+  max-width: 75rem;
+  margin: 7rem auto;
 }
 
 .HeroText button {
@@ -122,6 +125,7 @@
   border-color: var(--white);
   font-family: "Playfair Display", serif;
   padding: 8px 20px;
+  font-size: 1.2rem;
 }
 
 .HeroText button:hover {
@@ -158,51 +162,41 @@
 
 .projectItem {
   display: flex;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center;
+  gap: 6%;
+  margin-bottom: 6rem;
+}
+.projectImage {
+  flex: 1;
 }
 
 .projectItem img {
-  width: 45%;
+  width: 100%;
   border-radius: 2%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .projectDetails {
+  flex: 1;
   font-family: "Roboto", sans-serif;
+}
+
+.projectDetails h4 {
+  white-space: pre-wrap;
 }
 
 .projectTechStack {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 1rem;
-  font-size: 0.8rem;
+  gap: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
-.projectDetails p {
+
+.projectTechStack li {
+  list-style: none;
   border-radius: 2rem;
   background-color: #c99dac;
-  padding: 0.5rem 1rem;
-}
-
-.projectImage {
-  height: 55vh;
-  width: 100%;
-  background-image: url("./assets/chefsKiss.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-color: #a9dee9;
-  border-width: 4;
-  display: flex;
-  align-items: flex-end;
-}
-
-.projectLabel {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--heroBackground);
-  margin-top: 1rem;
-  font-family: "Roboto", sans-serif;
+  padding: 0.4rem 1rem;
 }
 
 .projectIcons {
@@ -230,7 +224,6 @@
 }
 
 .aboutHeader {
-  width: 100%;
   text-align: center;
 }
 
@@ -251,25 +244,26 @@
   border-radius: 50%;
 }
 
-.aboutText {
-  font-family: "Roboto", sans-serif;
-  padding: 3rem 4rem;
-  flex-basis: 30%;
-  shape-outside: circle();
-  float: right;
-}
-
 .aboutTextImg {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5%;
+  margin: 3rem;
+}
+
+.aboutText {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  text-align: justify;
+  width: 60%;
 }
 
 /* Footer Section */
 
 .footerSection {
   background-color: #a9dee92e;
-  padding: 5rem 0;
+  padding: 8rem 6rem;
 }
 
 .footerHeader {

@@ -34,6 +34,13 @@ export default function Hero() {
     return () => ctx.revert();
   }, []);
 
+  const handleClickScroll = () => {
+    const element = document.getElementById("contactForm");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="HeroSection">
       <div className="HeroText app" ref={parent}>
@@ -56,7 +63,9 @@ export default function Hero() {
             web development my new creative playground. Say hello or scroll down
             to see my portfolio and get to know me better.
           </p>
-          <button className="ActionButton">Say Hello</button>
+          <button className="ActionButton" onClick={handleClickScroll}>
+            Say Hello
+          </button>
         </div>
       </div>
     </div>

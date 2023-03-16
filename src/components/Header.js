@@ -1,6 +1,4 @@
 import React from "react";
-import fotoSquare from "../assets/fotoSquare.jpg";
-import { FaGithub } from "react-icons/fa";
 
 export default function Header() {
   const onButtonClick = () => {
@@ -28,7 +26,12 @@ export default function Header() {
   return (
     <div className="HeaderContainer">
       <div className="HeaderLeft">
-        <img src={fotoSquare} alt="profile"></img>
+        <img
+          src={
+            "https://res.cloudinary.com/dup0sa10r/image/upload/v1678827138/portfolio/fotoSquare_kemfbu.jpg"
+          }
+          alt="profile"
+        ></img>
         <p>
           Ana Sofia Rosa <br></br>
           Web & App Developer
@@ -48,6 +51,14 @@ export default function Header() {
               target="_blank"
             >
               Linkedin
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/anasofiarosa-fullstack/"
+              target="_blank"
+            >
+              Xing
             </a>
           </li>
           <li onClick={handleClickScroll}>Contact</li>

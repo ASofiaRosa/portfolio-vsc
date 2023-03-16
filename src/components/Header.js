@@ -3,14 +3,14 @@ import React from "react";
 export default function Header() {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch("Lebenslauf_AnaRosa.pdf").then((response) => {
+    fetch("CV_AnaSofiaRosa.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "Lebenslauf_AnaRosa.pdf";
+        alink.download = "CV_AnaSofiaRosa.pdf";
         alink.click();
       });
     });
@@ -55,7 +55,7 @@ export default function Header() {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/anasofiarosa-fullstack/"
+              href="https://www.xing.com/profile/AnaSofia_Rosa"
               target="_blank"
             >
               Xing

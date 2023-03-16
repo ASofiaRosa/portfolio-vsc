@@ -1,8 +1,6 @@
 import React from "react";
 import ContactForm from "./ContactForm";
-import footerimg from "../assets/footer.png";
 import { FaGithub, FaLinkedin, FaXing } from "react-icons/fa";
-import { MdWeb } from "react-icons/md";
 
 export default function Footer() {
   return (

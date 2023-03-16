@@ -1,5 +1,4 @@
 import React, { useLayoutEffect, Suspense, useRef } from "react";
-import SplitType from "split-type";
 import gsap from "gsap";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 

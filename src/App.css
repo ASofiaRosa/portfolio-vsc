@@ -79,7 +79,7 @@
 }
 
 .Spline {
-  margin: -31rem 0;
+  margin: -34rem 0;
   transform: scale(0.7);
 }
 .containerSpline {
@@ -96,17 +96,18 @@
   padding-top: 4rem;
   padding-right: 10rem;
   font-family: "Playfair Display", serif;
+  font-size: 3rem;
 }
 
 .TextHeader2 {
-  padding-left: 15rem;
+  padding-left: 20rem;
   font-family: "Playfair Display", serif;
 }
 
 .HeroText p {
   font-size: 1.2rem;
   opacity: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   letter-spacing: 0.1rem;
   color: var(--white);
 }
@@ -258,6 +259,7 @@
   font-size: 1.2rem;
   text-align: justify;
   width: 60%;
+  max-width: 60rem;
 }
 
 /* Footer Section */

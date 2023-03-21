@@ -44,14 +44,14 @@ export default function Hero() {
     <div className="HeroSection">
       <div className="HeroText app" ref={parent}>
         <div>
-          <h2 className="TextHeader1">Solving hard problems in easy ways,</h2>
+          <h2 className="TextHeader1">Solving hard problems,</h2>
           <h2 className="TextHeader2">is what makes me tick...</h2>
         </div>
         <div className="containerSpline">
           <Suspense fallback={<div>Loading...</div>}>
             <Spline
               className="Spline"
-              scene="https://prod.spline.design/kWU1bI4HIauKnNVc/scene.splinecode"
+              scene="https://prod.spline.design/VOpYlW7ftfBIWRnP/scene.splinecode"
             />
           </Suspense>
         </div>
